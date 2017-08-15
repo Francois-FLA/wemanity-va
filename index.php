@@ -31,12 +31,13 @@
       <hr class="bg-info">
       
 <!--          Informations générales-->
+      
+      <form method="post" id="totalPage">
       <div class="bg-primary text-white">
       <div id="block1" class="media  bg-primary text-white">
       
       <div id="infos1" class="media-body container bg-primary text-white">
           <br>
-          <form method="post" id="infosInput">     
               <div class="form-group">
                   <label for="candidat-name" class="">Candidat :</label>
                   <div class="">
@@ -55,18 +56,15 @@
                     <input class="form-control" type="text" id="candidat-val" name="candidat-val">
                   </div>
               </div>
-            </form>
         </div>
       
       <div id="infos2" class="d-flex align-self-center mr-3 bg-primary text-white">
           
           <div class="form-group">
-              <form method="post" name="dateVaVt" id="dateVaVt">
               <label for="dateVa" class="">Date :</label>
               <div class="">
                 <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateVa" name=" dateVa">
               </div>
-              </form>
             </div>
           
       </div>
@@ -82,7 +80,6 @@
         <br>        
         <h4 class="sectionTitle">Récapitulatif : Technologies / Agilité</h4>        
         <br>
-            <form method="post" name="skills">
                 
                 <div class="form-group row">
                     <label class="col-3 col-form-label" for="textTechno">Technologies / Agilité :</label>
@@ -112,7 +109,6 @@
                     </div>
                 </div>  
                 
-            </form> 
         
     </div>
       <br>
@@ -127,13 +123,11 @@
         <h4 class="sectionTitle">Commentaires et Avis</h4> 
         <br>
           
-          <form method="post" name="comments">
             <div class="form-group">
                 <textarea class="form-control" id="comment" rows="7" name="comment"></textarea>
               </div>
           
-          
-          </form>
+
       </div>
     <br>
         <hr class="bg-info">
@@ -145,7 +139,7 @@
       
       <div id="btnSection" class="bg-primary text-white">
       <div class=" bg-primary text-white">
-          <form class="form-inline justify-content-center" name="comment">
+          <div class="form-inline justify-content-center" >
               <label class="mr-sm-2" for="inlineFormCustomSelect">Envoyer à </label>
               <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
                 <option selected>Choisissez</option>
@@ -155,14 +149,14 @@
                 <option value="4">Yann CORITON</option>
               </select>
               <button id="submit" type="submit" class="btn btn-info" form="totalPage">Envoyer</button>
-          </form>
+          </div>
           
       </div>
           <br>
           <hr class="bg-info">
           <br>
     </div>
-      
+   </form>   
 <!--Copyright -->
       
     <div class="container-fluid row bg-primary text-info">
